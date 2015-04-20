@@ -35,6 +35,7 @@ __FBSDID("$FreeBSD$");
 #include <stdarg.h>
 #include <unistd.h>
 #include <libutil.h>
+#include <fcntl.h>
 
 int
 flopen(const char *path, int flags, ...)
