@@ -42,7 +42,7 @@ fpurge(FILE *fp)
 	return 0;
 }
 #else
-#error "Function fpurge() needs to be ported."
+//#error "Function fpurge() needs to be ported."
 #endif
 
 #ifdef TEST

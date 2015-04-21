@@ -26,6 +26,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
+#if !defined(EMSCRIPTEN)
 
 #if defined(LIBC_SCCS) && !defined(lint)
 static char sccsid[] = "@(#)nlist.c	8.1 (Berkeley) 6/4/93";
@@ -421,3 +422,5 @@ elf_sym_to_nlist(nl, s, shdr, shnum)
 		nl->n_type |= N_EXT;
 }
 #endif /* _NLIST_DO_ELF */
+
+#endif /* !defined(EMSCRIPTEN) */

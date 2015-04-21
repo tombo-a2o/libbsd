@@ -138,5 +138,5 @@ funopen(const void *cookie,
 	return fopencookie(cookiewrap, mode, funcswrap);
 }
 #else
-#error "Function funopen() needs to be ported."
+//#error "Function funopen() needs to be ported."
 #endif

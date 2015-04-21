@@ -40,7 +40,7 @@ int
 getpeereid(int s, uid_t *euid, gid_t *egid)
 {
 /* XXX: This should be autodetected at build time instead. */
-#if defined(__linux__)
+#if defined(__linux__) || defined(EMSCRIPTEN)
 	struct ucred cred;
 #elif defined(__OpenBSD__)
 	struct sockpeercred cred;
