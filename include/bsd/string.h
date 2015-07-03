@@ -37,8 +37,10 @@
 #include <sys/types.h>
 
 __BEGIN_DECLS
+#ifndef EMSCRIPTEN
 size_t strlcpy(char *dst, const char *src, size_t siz);
 size_t strlcat(char *dst, const char *src, size_t siz);
+#endif
 char *strnstr(const char *str, const char *find, size_t str_len);
 void strmode(mode_t mode, char *str);
 __END_DECLS
