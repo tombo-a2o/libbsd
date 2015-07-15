@@ -128,7 +128,6 @@ AC_CHECK_FUNCS([clearenv dirfd fopencookie __fpurge getexecname getline sysconf]
 AC_CONFIG_FILES([
 	Makefile
 	include/Makefile
-	man/Makefile
 	src/Makefile
 	src/libbsd.pc
 	src/libbsd-ctor.pc
