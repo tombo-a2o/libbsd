@@ -24,6 +24,7 @@
  * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+#ifndef EMSCRIPTEN
 
 #include <stdio.h>
 #include <sys/cdefs.h>
@@ -70,4 +71,6 @@ fgetln(FILE *stream, size_t *len)
 }
 #else
 #error "Function fgetln() needs to be ported."
+#endif
+
 #endif

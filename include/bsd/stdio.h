@@ -44,7 +44,11 @@
 __BEGIN_DECLS
 const char *fmtcheck(const char *, const char *);
 
+#ifndef EMSCRIPTEN
+
 char *fgetln(FILE *fp, size_t *lenp);
+
+#endif
 
 /*
  * Note: We diverge from the FreeBSD, OpenBSD and DragonFlyBSD declarations,
