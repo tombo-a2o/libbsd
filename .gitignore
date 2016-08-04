@@ -20,3 +20,4 @@ config.*
 libtool
 m4/
 stamp-h1
+build
