@@ -7,7 +7,6 @@ nobase_include_HEADERS = \
 	bsd/sys/poll.h \
 	bsd/sys/queue.h \
 	bsd/sys/tree.h \
-	bsd/netinet/ip_icmp.h \
 	bsd/bitstring.h \
 	bsd/bsd.h \
 	bsd/err.h \
